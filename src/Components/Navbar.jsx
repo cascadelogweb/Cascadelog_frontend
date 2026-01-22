@@ -88,7 +88,7 @@ const Navbar = () => {
 
                 <ul className={`home_nav-elements ${isMenuOpen ? 'home_active' : ''}`}>
                     <li><Link to="/" className="home_nav-link">Home</Link></li>
-                    <li><Link to="/#about" className="home_nav-link">About</Link></li>
+                    <li><Link to="/about" className="home_nav-link">About</Link></li>
                     {/* Dashboard only visible if logged in */}
                     {isLoggedIn && (<li><Link to="/dashboard" className="home_nav-link"> Dashboard</Link>  </li> )}
                 </ul>
@@ -142,4 +142,5 @@ export function LogoSVG() {
             </g>
         </svg>
     );
+
 }
